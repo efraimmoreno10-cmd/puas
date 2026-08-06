@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
-
-class UsuarioConfig(AppConfig):
-    name = 'usuario'
+class PuasappConfig(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'puapp'  # <-- Déjalo así, sin la "s" en medio

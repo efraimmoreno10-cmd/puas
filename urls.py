@@ -1,11 +1,7 @@
-from django.urls import path
-from . import views
-
-
+from django.contrib import admin
+from django.urls import path, include
 
 urlpatterns = [
-    path('login/',views.user_login, name = 'login')
-    
+    path('admin/', admin.site.urls),
+    path('', include('puapp.urls')),
 ]
-
-localhost:8000/account/login 
